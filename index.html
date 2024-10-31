@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alps Voyage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico" >
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+  </head>
+
+  <body>
+    <a id="top"></a>
+    <div class="background-container">
+      <div class="background-image"></div>
+      <header class="header">
+        <img src="src/logo.png" alt="Alps Voyage Logo" class="logo" />
+        <nav class="nav">
+          <label for="hamburger-checkbox" class="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
+          <div class="nav-content">
+            <a href="index.html" class="animate">HOME</a>
+            <a href="aboutus.html" class="animate">ABOUT US</a>
+            <a href="contactus.html" class="animate">CONTACT US</a>
+          </div>
+        </nav>
+      </header>
+      <div class="welcome-text animate">
+        <p>Welcome to Alps Voyage GmbH, your preferred DMC (Destination Management
+        Company) based in Switzerland. Specializing in inbound travel across
+        mainland Europe and Iceland, we have been passionately crafting
+        unforgettable experiences since our establishment as a DMC in July 2013. </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate">Travel Escapes</h2>
+    </div>
+ <!-- add a new section for the image grid -->
+ <section class="image-grid">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-2">
+        <img src="src/swiss.jpg" alt="Image 1" width="225" height="350" />
+        <h3 class="animate">Switzerland</h3>
+      </div>
+      <div class="col-md-2">
+        <img src="src/iceland.jpg" alt="Image 2" width="225" height="350" />
+        <h3 class="animate">Iceland</h3>
+      </div>
+      <div class="col-md-2">
+        <img src="src/japan.jpg" alt="Image 3" width="225" height="350" />
+        <h3 class="animate">Japan</h3>
+      </div>
+      <div class="col-md-2">
+        <img src="src/argentina.jpg" alt="Image 4" width="225" height="350" />
+        <h3 class="animate">South America</h3>
+      </div>
+      <div class="col-md-2">
+        <img src="src/vietnam.jpg" alt="Image 5" width="225" height="350" />
+        <h3 class="animate">Vietnam</h3>
+      </div>
+    </div>
+    <!-- add carousel arrows -->
+    
+  </div>
+
+  <!-- add two rectangles after the image grid -->
+  <div class="rectangle" id="r-1"></div>
+  <div class="rectangle" id="r-2"></div>
+</section>
+
+    <!-- add a new section for the background image and top text -->
+    <section class="background-section">
+      <div
+        class="background-image"
+        style="background-image: url('src/homebottom.jpg'); height: 980px"
+      >
+        <div class="top-text animate">
+          <p class="animate">
+            Whether you're seeking a scenic Alpine adventure, a cultural odyssey
+            <br />
+            through historic cities, a beach adventure or a gastronomic
+            exploration <br />
+            of any flavours, we are here to make your travel dreams come to
+            reality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- address -->
+    <footer>
+      <div class="black-background ">
+        <p >
+         
+          Head Office: Sonnenbergstrasse 18, 6060 Sarnen, Switzerland Tel: +41 779 739 584
+          
+        </p>
+      
+        <p>
+          Iceland Office:
+          
+Strandvegur 22, 871 Vik 
+Tel: +354 786 4486
+        </p>
+        
+
+        <p>
+          Indian Representation:
+                   
+          102, Mathura Kunj, opp. Maxus Mall Road, Padmavati Nagar, Bhayandar West, <br> Maharashtra 401101 Tel: +91 99879 88895
+        </p>
+        <p style="text-align: center; font-size:15px;font-weight: 400; margin-top: 20px;">
+            <a href="#top" class="smooth-scroll animate" style="text-decoration: none;color:#fff;">Back to Top</a>
+          </p>
+      </div>
+      
+    </footer>
+   
+    <script>
+        $(document).ready(function() {
+          $(".smooth-scroll").on('click', function(event) {
+            event.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+              scrollTop: $(target).offset().top
+            }, 800);
+          });
+        });
+      </script>
+  </body>
+</html>
